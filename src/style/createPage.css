@@ -1,0 +1,129 @@
+
+
+
+.createSectionWrapper {
+    padding:0px;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.createSectionWrapper h2{
+    font-size: 1.8rem !important;
+    line-height: 2.2rem !important;
+    font-family: "Graphik-Bold", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+.linkAddAnotherShareholder {
+    font-size:20px;
+    text-decoration: none;
+}
+
+.trashIcon {
+    color:#ccc;
+}
+.trashIcon:hover {
+    color:#333;
+}
+
+
+.membersColumn{
+    backgroundColor:#f7f7f7;
+    border-right: 1px solid #ccc;
+}
+
+.keyshareShareWrapper {
+
+
+  /*  background-color: #f7f7f7;
+    border: 1px solid #ccc;*/
+}
+
+.keyshareShareInnerWrapper {
+
+}
+
+.bottomWizardWrapper {
+    /*text-align: center;*/
+    padding:40px 0px 20px 0px;
+   /* border-top: 1px solid #ccc;*/
+
+   /* background-color: #f7f7f7;*/
+}
+
+.memberWrapper {
+    alignItems: center;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 20px;
+    padding:15px;
+    text-decoration: none;
+}
+.activeMember {
+    color: #1786ff !important;
+    background-color: #fff;
+    border-color: #1786ff;
+    font-weight: bold;
+
+}
+
+.animationWrapper {
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+}
+
+.ulKeyCeremony {
+    list-style-type: square;
+    font-size: 1.3rem;
+}
+.ulKeyCeremony li {
+    padding: 4px 0px;
+}
+
+.blurryClass {
+    filter: blur(15px);
+}
+
+.waitingForKeyholder {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.waitingForKeyholder .waitingForKeyholderText {
+    font-size: 1.5rem;
+    flex:1;
+    padding-left:20px;
+}
+.shareKeyAltAction {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.shareKeyAltAction a {
+    color:#555 !important;
+}
+.shareKeyAltActionSection {
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+    padding:10px;
+    border:1px solid #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}

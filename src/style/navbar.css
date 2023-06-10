@@ -1,0 +1,110 @@
+
+
+.navbarWrapper {
+    background-color: #fff;
+    padding:0px 0px;
+
+    position: relative;
+    z-index: 300;
+}
+
+.navbarLogo {
+    font-size: 30px !important;
+    font-family:  "Graphik-Bold", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    line-height: 16px !important;;
+    color:#333;
+    text-align: center;
+    margin:0px !important;
+    padding: 0px !important;
+}
+
+.navbarLogo img {
+
+    color:#fff;
+    margin-right: 10px;
+    max-width: 40px;
+}
+.navbarLogoIcon {
+    color:#333;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size:39px;
+    line-height: 20px;
+    min-width: 100px;
+}
+
+.navbarCustom {
+    margin-bottom:0;
+
+}
+
+.navbarWrapper .navbar-toggler svg {
+
+    color:#000;
+    font-size: 30px;
+
+}
+
+.nav-item {
+    padding:10px 6px;
+
+}
+.nav-item:last-child {
+    padding-right:0px;
+}
+.navbarCustom .nav-brand {
+    font-family: "Bowlby One SC", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    color:#333;
+    font-size: 30px;
+
+}
+
+.nav-item .nav-link{
+    color:#2e2e2e;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.nav-item .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.nav-dropdown-item {
+    padding:4px 20px !important;
+    font-family: "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.whitepaperbtn {
+    background-color: orange;
+}
+
+.whitepaperbtn:hover {
+    background-color: #000;
+}
+
+
+
+
+/* large devices */
+
+@media (min-width: 768px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nav-item {
+        border-bottom:1px solid #555;
+    }
+    .nav-item .nav-link{
+        font-size: 1rem;
+    }
+}

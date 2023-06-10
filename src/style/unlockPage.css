@@ -1,0 +1,346 @@
+
+
+body {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    min-height: 100vh;
+
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local('Inter'), url("../fonts/Graphik/Graphik-Regular-Web.eot");
+    src: local('Inter'), url("../fonts/Graphik/Graphik-Regular-Web.eot?#iefix")
+    format("embedded-opentype"),
+    url("../fonts/Graphik/Graphik-Regular-Web.woff")
+    format("woff");
+}
+
+@font-face {
+    font-family: "Graphik-Bold";
+    src: local('Inter'), url("../fonts/Graphik/Graphik-Bold.eot");
+    src: local('Inter'), url("../fonts/Graphik/Graphik-Bold.eot?#iefix")
+    format("embedded-opentype"),
+    url("../fonts/Graphik/Graphik-Bold.woff")
+    format("woff");
+}
+
+h1 {
+
+    /* text-shadow: 4px 4px 0px #fff; */
+}
+
+h2 {
+    font-size: 1.5rem !important;
+    font-family: "Graphik-Bold", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8rem !important;
+    color:#2e2e2e;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 24px !important;
+    font-family: "Graphik-Bold", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    line-height: 34px !important;
+    color:#333;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 18px !important;
+    font-family: "Graphik-Bold", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    line-height: 34px !important;
+    color:#333;
+    font-weight: normal;
+}
+
+.layoutWrapper {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
+
+.linkage {
+    color:#1786ff;
+    text-decoration: none;
+}
+.linkage:hover {
+    color:#4132A0;
+}
+
+.loading {
+    height:20px;
+}
+
+.pageWrapper {
+    /*background-color: #1786ff;*/
+    background-color: #fff;
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding-top:40px;
+
+    border-top: 1px solid #ccc;
+}
+
+
+.unlockrow {
+    display: block;
+    flex-direction: row;
+}
+.unlockrowItem {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding:6px 10px;
+    margin-bottom:10px;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display:inline-block;
+}
+.unlockrowItemSuccess {
+    background-color: #d1e7dd;
+}
+.qrIcon {
+    font-size: 30px;
+}
+.keyIcon {
+    font-size:18px;
+    margin-right: 4px;
+}
+.activeQR {
+    animation: flashing 2s ease-in-out infinite;
+    border: 1px solid steelblue;
+}
+
+.unlockInstruction {
+    margin: 10px 0px 10px 0px;
+    font-size:1rem;
+}
+.unlockIcon {
+    font-size:1.5rem;
+    margin-right:10px;
+}
+.space-between-row {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: space-between;
+}
+.noWrap {
+    white-space: nowrap;
+}
+
+.navbarWrapper {
+    background-color: #fff;
+    padding:0px 0px;
+
+    position: relative;
+    z-index: 300;
+}
+
+.navbarLogo {
+    font-size: 30px !important;
+    font-family:  "Graphik-Bold", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    line-height: 16px !important;;
+    color:#333;
+    text-align: center;
+    margin:0px !important;
+    padding: 0px !important;
+}
+
+.navbarLogo img {
+
+    color:#fff;
+    margin-right: 10px;
+    max-width: 40px;
+}
+.navbarLogoIcon {
+    color:#333;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size:39px;
+    line-height: 20px;
+    min-width: 100px;
+}
+
+.navbarCustom {
+    margin-bottom:0;
+
+}
+
+.navbarWrapper .navbar-toggler svg {
+
+    color:#000;
+    font-size: 30px;
+
+}
+
+.nav-item {
+    padding:10px 6px;
+
+}
+.nav-item:last-child {
+    padding-right:0px;
+}
+.navbarCustom .nav-brand {
+    font-family: "Bowlby One SC", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    color:#333;
+    font-size: 30px;
+
+}
+
+.nav-item .nav-link{
+    color:#2e2e2e;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+
+}
+
+.nav-item .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.nav-dropdown-item {
+    padding:4px 20px !important;
+    font-family: "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.whitepaperbtn {
+    background-color: orange;
+}
+
+.whitepaperbtn:hover {
+    background-color: #000;
+}
+
+
+
+
+@keyframes flashing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* ------- FORM stuff ------- */
+.formGroup {
+    padding:10px 0px;
+}
+.formLabel {
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+
+}
+.formControl {
+    height:44px;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size:1.4rem;
+    border: 1px solid #999 !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    border-radius: 8px !important;
+}
+.formGroup input, .formGroup textarea {
+    min-height:50px;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size:1.4rem;
+}
+
+.formGroupCheckbox input {
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+}
+
+.formControl::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999 !important;
+    opacity: 1; /* Firefox */
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.formControl:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red !important;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+
+}
+
+.formControl::-ms-input-placeholder { /* Microsoft Edge */
+    color: red !important;
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+}
+
+.formSelect {
+    font-family: "Graphik", "Open Sans", "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    font-size:20px;
+    border: 1px solid #999 !important;
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    border-radius: 8px !important;
+    padding-left: 10px;
+    width:100%;
+    height:50px;
+}
+
+.inputGroupIcon {
+    background-color: #fff;
+    border-color:#fff;
+    font-size:24px;
+    line-height: 24px;
+}
+
+.secretTextInput {
+    border: 2px dashed orange !important;
+}
+/** ------ end form stuff ---------- **/
+
+
+.unlockInstruction {
+    margin: 10px 0px 10px 0px;
+    font-size:1rem;
+}
+.unlockIcon {
+    font-size:1.5rem;
+    margin-right:10px;
+}
+
+
+/* large devices */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1100px !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nav-item {
+        border-bottom:1px solid #555;
+    }
+    .nav-item .nav-link{
+        font-size: 1rem;
+    }
+}
