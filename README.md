@@ -23,6 +23,8 @@ Create your vault at [kosign.xyz](https://kosign.xyz)
 
 
 ### Install Unlock Tool
+
+#####Option 1: Install from source
 Ideally you should install this software on an offline 
 computer that is physically disconnected from the internet. 
 
@@ -35,6 +37,12 @@ Clone the repository and install
 ```yarn start```
 
 Then open [http://localhost:3000](http://localhost:3000) to view in your browser.
+
+#####Option 2: Download packaged release
+
+[Download](https://github.com/xxbtc/kosign-unlock/releases/download/v1.0/kosign-unlock-v1.0.zip) 
+ and extract the zip file 
+
 
 
 
