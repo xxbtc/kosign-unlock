@@ -1,4 +1,6 @@
 import secrets from 'secrets.js';
+import { CURRENT_VAULT_VERSION, VAULT_VERSIONS } from '../config/vaultConfig';
+
 const CryptoJS = require("crypto-js");
 
 export  class EncryptionService  {
@@ -11,7 +13,12 @@ export  class EncryptionService  {
         return CryptoJS.SHA256(dataToHash).toString();
     };
 
-    static decrypt = async (dataToDecrypt, secretKey, iv) => {
+    static decrypt = async (dataToDecrypt, secretKey, iv, version = CURRENT_VAULT_VERSION) => {
+        // Version validation
+        if (!VAULT_VERSIONS[version]) {
+            throw new Error(`Unsupported vault version: ${version}. Please update your software.`);
+        }
+
         const encryptionOptions = {
             iv      : CryptoJS.enc.Hex.parse(iv),
             mode    : CryptoJS.mode.CTR,
@@ -26,11 +33,16 @@ export  class EncryptionService  {
     };
 
     static combineShares = async (shares) => {
-        let comb = secrets.combine(shares);
-        return secrets.hex2str(comb);
+        console.log('combineShares called with', shares.length, 'shares');
+        
+        try {
+            let comb = secrets.combine(shares);
+            return secrets.hex2str(comb);
+        } catch (error) {
+            console.error('Error in combineShares:', error);
+            throw new Error(`Failed to combine shares: ${error.message}`);
+        }
     };
-
-
 
 }
 
