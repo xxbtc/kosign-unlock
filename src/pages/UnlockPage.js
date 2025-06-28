@@ -29,7 +29,6 @@ import {Oval} from 'react-loading-icons';
 import PreparationStep from '../components/PreparationStep';
 import VaultMetadata from '../components/VaultMetadata';
 import UnlockedVault from '../components/UnlockedVault';
-import { useSensitiveMode } from '../contexts/SensitiveModeContext';
 
 // NEW: Import format-specific components
 import SingleQRUnlock from '../components/SingleQRUnlock';
@@ -95,7 +94,6 @@ function UnlockPage() {
     const [isOnline, setIsOnline]   = useState(navigator.onLine);
     const [cameraError, setCameraError] = useState(null);
     const [cameraFacing, setCameraFacing] = useState('back'); // 'back' or 'front'
-    const { enterSensitiveMode, exitSensitiveMode } = useSensitiveMode();
 
     useEffect(() => {
         const handleOnline = () => setIsOnline(navigator.onLine);
@@ -106,12 +104,10 @@ function UnlockPage() {
 
         return () => {
             cleanupSensitiveData();
-            // Exit sensitive mode when leaving the page
-            exitSensitiveMode();
             window.removeEventListener('online', handleOnline);
             window.removeEventListener('offline', handleOffline);
         };
-    }, [exitSensitiveMode]);
+    }, []);
 
     useEffect(()=>{
         if (!metadata) return;

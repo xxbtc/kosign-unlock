@@ -1,0 +1,269 @@
+/* Single QR Mode Styles - Dark Theme - Simplified */
+.single-qr-mode {
+    background: #0a0a0a;
+    color: #e5e5e5;
+    padding: 2rem;
+    border-radius: 16px;
+}
+
+.scanner-column {
+    position: relative;
+}
+
+.scanner-processing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    background: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    color: #e5e5e5;
+    gap: 1rem;
+}
+
+/* Camera Controls */
+.camera-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.camera-switch-btn {
+    background: rgba(23, 134, 255, 0.9);
+    border: 1px solid rgba(23, 134, 255, 0.6);
+    border-radius: 8px;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.camera-switch-btn:hover {
+    background: rgba(23, 134, 255, 1);
+    border-color: #1786ff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(23, 134, 255, 0.4);
+}
+
+.camera-hint {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #b0b0b0;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+}
+
+.single-qr-mode .vault-progress-simple {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: #e5e5e5;
+}
+
+.single-qr-mode .vault-name {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    border-bottom: 1px solid #333333;
+    padding-bottom: 0.75rem;
+}
+
+.single-qr-mode .progress-item-row {
+    margin-bottom: 1.5rem;
+}
+
+.single-qr-mode .progress-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.single-qr-mode .progress-item.completed {
+    background: rgba(76, 175, 80, 0.15);
+    border-color: #4caf50;
+    color: #4caf50;
+}
+
+.single-qr-mode .progress-item.pending {
+    background: rgba(23, 134, 255, 0.1);
+    border-color: #1786ff;
+    color: #1786ff;
+}
+
+.single-qr-mode .check-icon {
+    color: #4caf50;
+    font-size: 1rem;
+}
+
+.single-qr-mode .pending-icon {
+    color: #1786ff;
+    font-size: 1rem;
+}
+
+/* Simplified Keys Section */
+.single-qr-mode .keys-section {
+    margin-top: 1rem;
+}
+
+.single-qr-mode .keys-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.single-qr-mode .section-icon {
+    color: #1786ff;
+    font-size: 1rem;
+}
+
+/* Simplified Keys Grid */
+.single-qr-mode .keys-grid-simple {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.single-qr-mode .key-item-simple {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.single-qr-mode .key-item-simple:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(23, 134, 255, 0.15);
+    border-color: #1786ff;
+}
+
+.single-qr-mode .key-item-simple.completed {
+    background: rgba(76, 175, 80, 0.15);
+    border-color: #4caf50;
+    color: #4caf50;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+.single-qr-mode .key-alias {
+    font-size: 0.9rem;
+    color: #e5e5e5;
+}
+
+.single-qr-mode .key-icon {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.single-qr-mode .key-item-simple.completed .key-alias {
+    color: #4caf50;
+}
+
+.single-qr-mode .keys-note-simple {
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 6px;
+    border: 1px solid #2a2a2a;
+}
+
+/* Current Action Styling - Match Dark Theme */
+.single-qr-mode .current-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 1px solid #333333;
+    border-radius: 12px;
+    color: #e5e5e5;
+    font-size: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.single-qr-mode .current-action .loading {
+    width: 20px;
+    height: 20px;
+}
+
+/* Remove all old nested styles */
+.single-qr-mode .scan-status-section,
+.single-qr-mode .status-card,
+.single-qr-mode .vault-info-section,
+.single-qr-mode .vault-basic-info,
+.single-qr-mode .progress-section,
+.single-qr-mode .section-header,
+.single-qr-mode .progress-items,
+.single-qr-mode .progress-row,
+.single-qr-mode .progress-item-single,
+.single-qr-mode .keys-grid,
+.single-qr-mode .key-item,
+.single-qr-mode .keys-note {
+    display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .single-qr-mode {
+        padding: 1rem;
+    }
+    
+    .camera-controls {
+        top: 5px;
+        right: 5px;
+    }
+    
+    .camera-switch-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .camera-hint {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    .keys-grid-simple {
+        grid-template-columns: 1fr;
+    }
+    
+    .single-qr-mode .vault-progress-simple {
+        padding: 1rem;
+    }
+} 
