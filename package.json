@@ -2,6 +2,7 @@
   "name": "kosign-unlocknpm",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -38,7 +39,10 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "node server.js",
+    "package": "npm run build && npm run create-distribution",
+    "create-distribution": "node scripts/create-distribution.js"
   },
   "eslintConfig": {
     "extends": [

@@ -40,7 +40,7 @@ Then open [http://localhost:3000](http://localhost:3000) to view in your browser
 
 #####Option 2: Download packaged release
 
-[Download](https://github.com/xxbtc/kosign-unlock/releases/download/v1.0/kosign-unlock-v1.0.zip) 
+[Download](https://github.com/xxbtc/kosign-unlock/releases/download/v1.0/kosign-unlock-v1.1.zip) 
  and extract the zip file 
 
 
